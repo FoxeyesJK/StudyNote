@@ -24,3 +24,8 @@ imputer = imputer.fit(X[:, 1:3])
 "Lower bound include, upper bound not included"
 X[:, 1:3] = imputer.transform
 "Trnasform = replace the mean of the column"
+
+//Encoding first cloumn to numbers
+from sklearn.preprocessing import LabelEncoder
+labelencoder_X = LabelEncoder()
+X[:,0] = labelencoder_X.fit_transform(X[:,0])
