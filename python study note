@@ -1,0 +1,62 @@
+‘’ “” string
+“ I’m a dog “
+
+print(mystring[0]), [-1]=g, [4: ] =efg
+[::2] step size = a,c,e
+x= “Item One: {x} Item Two: {y}”.format(x=“dong”,y=“cat”)
+my list = [‘a’,’b’,’c’] list define
+.append = add value at the end of array
+my_stuff = {“key1”:123, ‘key2’:’value2’}
+
+tuple = 길이가있는
+t = (1,2,3) - immutable(unchangeable)
+print(t[0]) 
+x=set()
+x.add(1)
+x.add(2)
+print(x) -> {1,2} sort 되잇음, duplicate안됨
+
+if 1<2:
+for item in seq:
+my pairs = [(1,2),(3,4),(5,6)]
+for(tup1,tup2) in my pairs:
+out = [num**2 for num in x]
+
+def my_func(param1=‘default’):   -> function
+evens = filter(bool,mylist) -> return true list
+print list(evens)
+
+lambda num:num%2 == 0
+
+function안에 function 프린트는 안됨
+class Dog(): 	def __init__(self, breed):
+		self.breed = breed
+	def whoAmI(self):
+		print
+my dog = Dog(breed = “Lab”)
+print(mydog.breed)
+self-refer to instance object 
+breed-argument(initialization)
+
+mya = Dog()
+mya.whoAmI()
+
+
+def __init__(self, title,author,pages): 	self.title = title
+	self.author = author
+	self.pages = pages
+
+def __str__(self): 	return “Title: {}, Author: {}, 
+pages{}”.format(self.title,self.author,self.pages)
+
+def __len__(self):
+	return self.pages
+
+def __del__(self):
+	pirnt(“Deleted”) 
+
+b=Book(“python”,”jose”,200)
+
+print(b)
+print(len(b))
+del b
