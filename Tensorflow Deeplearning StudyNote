@@ -1,0 +1,62 @@
+Country Age Salary -independent 
+Purchased(dependent)
+
+-Importing the dataset
+-Taking care of missing data
+-Encoding data = Yes, No -> 0,1
+-Encoding categorical data(Separate columns for no priority)
+-Training, Test set
+-Feature Scaling(Normalization) - no value is dominated by others
+
+
+Supervised Learning - Classification
+	-features: height and Weights
+	-Label: gender(categorical)
+Task: predict gender with given height & weight
+-which metric is the most important depends on the specific situation
+
+Supervised Learning - Regression
+	-features: Square Footage, Rooms
+	-Label: House Price(continuous)
+Task: predict the selling price given data
+-prediction based on historical data
+-how far from the correct continuous value(avg)
+
+-No label -> look for patterns in the data(unsupervised)
+
+Unsupervised Learning - Clustering
+	-features: Heights and Weights for breeds of dogs
+	-Label: No Label for unsupervised
+Task: Cluster together the data into similar groups.
+-Not telling you the group, but finding similar data
+-Hard to evaluate
+
+Reinforcement Learning
+-Components
+	-Agent-Learning/Decision Maker
+	-Environment - what agent interacts with
+	-Actions - What the Agent can do
+-chose action to maximize reward
+
+1. Data Acquisition
+2. Data Cleaning(Encoding, Normalizing)
+3. Train Test Split
+4. Train/Fit Model on Training Data
+5. Evaluate Model
+6. Adjust Model Parameters 
+7. Deploy Model
+8. Holdout Sets
+
+Numpy
+np.arange(0,11(unto),2(Stepsize))
+np.zeros(((row),(column)))
+np.ones((3,5))
+np.linspace(0,11,11(points)) - evenly spaced
+np.random.randint(0,10)
+np.random.seed(101) - holding same rand value
+arr.argmax() - index location of max value
+arr.reshape(2,5) - changing format of matrix
+mat = np.arange(0,100).reshape(10,10)
+mat[4(row),3(coulumn)]
+
+Pandas(reading csv file)
