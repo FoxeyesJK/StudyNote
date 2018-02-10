@@ -1,0 +1,4 @@
+IEnumerable vs IQueryable
+IEnumerable: Filter is executed on the client side
+IQueryable: Filter is applied on the database using the "SQL" query
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=IEnumerable+IQueryable
