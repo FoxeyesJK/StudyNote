@@ -1,3 +1,6 @@
+Jquery Anmation Link
+https://www.w3schools.com/jquery/jquery_examples.asp
+
 $(document).ready(function(){
     $("button").click(function(){
         $("p").hide();
@@ -22,5 +25,16 @@ $( document ).ready(function() {
 $( "a" ).addClass( "test" );
 $( "a" ).removeClass( "test" );
 
-Jquery Anmation Link
-https://www.w3schools.com/jquery/jquery_examples.asp
+--------------------------------Example--------------------------------------------
+
+function returnproduct() {
+        $('.divpopupiframe').css('width', '600px');
+        $('.divpopupiframe').css('height', '180px');
+
+        iframebpopup('/COrder/COrderReturn?nOrderIdx=@Model.COrder.COrderIdx');
+        window.open('/Shipment/ShipmentOutDetailEdit?ShipmentIdx=' + shipmentidx, 'Shipment Edit', p1 + p2);
+
+        return false;
+    }
+
+<input type="button" class="nbutton" value="Return Product" onclick="return returnproduct();">
