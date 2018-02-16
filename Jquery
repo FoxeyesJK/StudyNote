@@ -38,3 +38,12 @@ function returnproduct() {
     }
 
 <input type="button" class="nbutton" value="Return Product" onclick="return returnproduct();">
+
+$(document).ready(function () {//pageonload
+        $('#TextBoxAmount').priceFormat({
+            prefix: '$',
+            thousandsSeparator: ','
+        }).css('text-align', 'right').keyup(function () {
+            var refund = $('#TextBoxAmount').val().replace(/[^0-9\.]+/g, "");
+        });
+    });
