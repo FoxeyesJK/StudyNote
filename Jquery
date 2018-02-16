@@ -3,3 +3,24 @@ $(document).ready(function(){
         $("p").hide();
     });
 });
+
+w/Id = #test, w/class = .test
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#test").hide();
+    });
+});
+
+//After finishing loading the browser
+window.onload = function() {
+}'
+
+//run code as soon as the document is ready to be maniupulated
+$( document ).ready(function() {
+});
+
+$( "a" ).addClass( "test" );
+$( "a" ).removeClass( "test" );
+
+Jquery Anmation Link
+https://www.w3schools.com/jquery/jquery_examples.asp
