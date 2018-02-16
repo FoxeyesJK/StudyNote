@@ -1,0 +1,28 @@
+<input type="button" class="nbutton" value="Full Refund" onclick="return fullrefund();">
+
+function ButtonReceive_Click(PaymentInIdx) {
+
+        if(confirm('Are you sure to confirm?') == true){
+
+            $.ajax({
+                type: "POST",
+                data: "PaymentInIdx=" + PaymentInIdx,
+                // BOrder, CORder, Invoice works same
+                url: '@Url.Action("PaymentReceived", "BOrder")',
+                success: function (result) {
+                    if (result.IsSuccess)
+                    {
+                        alert('Payment was received successfully!');
+                        window.location.reload();
+                    }
+                    else
+                    {
+                        alert('failed.');
+                    }
+                }
+            });
+
+            return true;
+        }
+        return false;
+    }
