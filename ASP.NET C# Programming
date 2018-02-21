@@ -2,3 +2,7 @@ IEnumerable vs IQueryable
 IEnumerable: Filter is executed on the client side
 IQueryable: Filter is applied on the database using the "SQL" query
 https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=IEnumerable+IQueryable
+
+Abstract -> Interface = 클래스에 포함된 여러가지 속성, 메소드 등을 틀만 정의해두고 상속받는 클래스에서 overwiritng함
+Concrete
+Entities - Create Model
